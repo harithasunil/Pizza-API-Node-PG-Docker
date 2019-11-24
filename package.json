@@ -1,0 +1,29 @@
+{
+  "name": "pizza-api",
+  "version": "1.0.0",
+  "description": "Node JS, Express, Postgres, Docker",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --timeout 1500"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshay-N-Shaju/pizza-api.git"
+  },
+  "author": "Akshay N Shaju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akshay-N-Shaju/pizza-api/issues"
+  },
+  "homepage": "https://github.com/Akshay-N-Shaju/pizza-api#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mocha": "^6.2.2",
+    "morgan": "^1.9.1",
+    "pg": "^7.14.0",
+    "sequelize": "^5.21.2"
+  }
+}
