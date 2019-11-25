@@ -67,7 +67,6 @@ module.exports = {
                 ]
             });
         }
-
         return order
         .update(
           req.body,

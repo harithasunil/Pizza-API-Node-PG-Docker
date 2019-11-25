@@ -7,20 +7,30 @@ module.exports = app => {
       message: "End Point is missing"
     })
   );
+  
+  app.route('/api/items')
+    .get(itemsController.list)
+    .post(itemsController.create);
 
-  app.post("/api/items", itemsController.create);
-  app.put("/api/items/:id", itemsController.update);
-  app.get("/api/items", itemsController.list);
-  app.get("/api/items/:id", itemsController.retrieve);
-  app.delete("/api/items/:id", itemsController.delete);
+  app.route('/api/items/:id')
+    .get(itemsController.retrieve)
+    .put(itemsController.update)
+    .delete(itemsController.delete);
 
-  app.post("/api/orders", ordersController.create);
-  app.put("/api/orders/:id", ordersController.update);
-  app.get("/api/orders", ordersController.list);
-  app.get("/api/orders/:id", ordersController.retrieve);
-  app.delete("/api/orders/:id", ordersController.delete);
-  app.post("/api/orders/:id/items", ordersController.createOrderItem);
-  app.put("/api/orders/:id/items/:orderItemId", ordersController.updateOrderItem);
-  app.delete("/api/orders/:id/items/:orderItemId", ordersController.deleteOrderItem);
+  app.route('/api/orders')
+    .get(ordersController.list)
+    .post(ordersController.create);
+
+  app.route('/api/orders/:id')
+    .get(ordersController.retrieve)
+    .put(ordersController.update)
+    .delete(ordersController.delete);
+  
+  app.route('/api/orders/:id/items')
+    .post(ordersController.createOrderItem);
+
+  app.route('/api/orders/:id/items/:orderItemId')
+  .put(ordersController.updateOrderItem)
+  .delete(ordersController.deleteOrderItem);
 
 };
