@@ -1,26 +1,26 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "moberries",
-    "host": "localhost",
-    "port": 9143,
-    "dialect": "postgres"
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
+    "port": ,
+    "dialect": ""
   },
   "test": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "moberries",
-    "host": "localhost",
-    "port": 9143,
-    "dialect": "postgres"
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
+    "port": ,
+    "dialect": ""
   },
   "production": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "moberries",
-    "host": "localhost",
-    "port": 9143,
-    "dialect": "postgres"
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
+    "port": ,
+    "dialect": ""
   }
 }
