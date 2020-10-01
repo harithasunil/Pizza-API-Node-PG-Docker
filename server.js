@@ -21,11 +21,9 @@ app.use(logger('common', {
 
 
 require("./app/routes")(app);
-
 app.get("*", (req, res) =>
   res.status(200).send({
     message: "Pizza API"
   })
 );
-
 app.listen(port, () => console.log(`${__dirname} App listening on port ${port}!`))
