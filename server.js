@@ -19,7 +19,6 @@ app.use(logger('common', {
   })
 }));
 
-
 require("./app/routes")(app);
 app.get("*", (req, res) =>
   res.status(200).send({
